@@ -1,4 +1,4 @@
-import os
+import os aaaa
 import random
 jogadas1 = 0
 jogadas2 = 0

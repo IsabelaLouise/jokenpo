@@ -19,7 +19,6 @@ if opcoes == 1:
     nomeJogador2 = input('\nJogador 2, digite seu nome: ').capitalize()
     resposta1 = 1
 
-#blabla
     while resposta1 == 1:
         jogada1 = input(f'\n{nomeJogador1}, faça sua jogada (pedra, papel ou tesoura): ').lower()
         os.system('clear')

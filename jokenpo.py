@@ -22,7 +22,7 @@ if opcoes == 1:
     while resposta1 == 1:
         jogada1 = input(f'\n{nomeJogador1}, faça sua jogada (pedra, papel ou tesoura): ').lower()
         os.system('clear')
-        jogada2 = input(f'{nomeJogador2}, faça sua jogada (pedra, papel ou tesoura): ').lower()
+        jogada2 = input(f'\n{nomeJogador2}, faça sua jogada (pedra, papel ou tesoura): ').lower()
         os.system('clear')
 
         if jogada1 == 'tesoura' and jogada2 == 'pedra' or jogada1 == 'papel' and jogada2 == 'tesoura' or jogada1 == 'pedra' and jogada2 == 'papel':
@@ -58,7 +58,7 @@ elif opcoes == 2:
             jogadaBot = 'papel'
         else:
             jogadaBot = 'tesoura'
-        print(f'O computador jogou {jogadaBot}')
+        print(f'\nO computador jogou {jogadaBot}')
         if jogada1 != 'tesoura' and jogada1 != 'papel'and jogada1 != 'pedra':
             resposta1 = int(input(f'\nEi, essa jogada não existe! Desejam jogar novamente?\n(Digite 1 para Sim e 2 para Não): '))
         elif jogada1 == 'tesoura' and jogadaBot == 'pedra' or jogada1 == 'papel' and jogadaBot == 'tesoura' or jogada1 == 'pedra' and jogadaBot == 'papel':
@@ -68,14 +68,14 @@ elif opcoes == 2:
             resposta1 = int(input(f'\nVocê venceu! Deseja jogar novamente? \n(Digite 1 para Sim e 2 para Não): '))
             jogadas1 += 1
         elif jogada1 == 'pedra' and jogadaBot == 'pedra' or jogada1 == 'tesoura' and jogadaBot == 'tesoura' or jogada1 == 'papel' and jogadaBot == 'papel': 
-            resposta1 = int(input(f'{nomeJogador} e computador empataram! Deseja jogar novamente?\n(Digite 1 para Sim e 2 para Não): '))
+            resposta1 = int(input(f'\n{nomeJogador} e computador empataram! Deseja jogar novamente?\n(Digite 1 para Sim e 2 para Não): '))
              
     if jogadas1 > jogadas2:
         print(f'\nParabéns {nomeJogador}, você foi o(a) vencedor(a)! \nPlacar final: {nomeJogador} {jogadas1} x {jogadas2} Computador')
-        print('Muito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
     elif jogadas1 < jogadas2:
         print(f'\nO computador foi o vencedor! \nPlacar final: Computador {jogadas2} x {jogadas1} {nomeJogador}')
-        print('Muito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
     else:
         print(f'\nHouve um empate! \nPlacar final: {nomeJogador} {jogadas1} x {jogadas2} Computador')
 
@@ -108,10 +108,10 @@ elif opcoes == 3:
             resposta1 = int(input('\nComputador 1 e computador 2 empataram! Deseja jogar novamente?\n(Digite 1 para Sim e 2 para Não): '))     
     if jogadas1 > jogadas2:
         print(f'\nO computador 1 venceu! \nPlacar final: Computador 1 {jogadas1} x {jogadas2} Computador 2')
-        print('Muito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
     elif jogadas1 < jogadas2:
         print(f'\nO computador 2 foi o vencedor! \nPlacar final: Computador 2 {jogadas2} x {jogadas1} Computador 1')
-        print('Muito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
     else:
         print(f'\nHouve um empate! \nPlacar final: Computador 1 {jogadas1} x {jogadas2} Computador 2')
 

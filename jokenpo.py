@@ -4,44 +4,45 @@ jogadas1 = 0
 jogadas2 = 0
 
 print('Bem vindo(a) ao jogo do pedra, papel e tesoura')
-print('Você terá três opções de jogo: \n1. Jogador x Jogador \n2. Jogador x Computador \n3. Computador x Computador \n4.Sair')
-opcoes = int(input('Qual você deseja jogar? '))
+print('\nVocê terá três opções de jogo: \n1. Jogador x Jogador \n2. Jogador x Computador \n3. Computador x Computador \n4.Sair')
+opcoes = int(input('\nQual você deseja jogar? '))
 os.system('clear')
 
 while opcoes != 1 and opcoes != 2 and opcoes != 3 and opcoes != 4:
     print('Eiii! Essa opção não existe!')
     print('\nVocê terá três opções de jogo: \n1. Jogador x Jogador \n2. Jogador x Computador \n3. Computador x Computador \n4.Sair')
-    opcoes = int(input('Qual você deseja jogar? '))
+    opcoes = int(input('\nQual você deseja jogar? '))
     os.system('clear')
 
 if opcoes == 1:
-    nomeJogador1 = input('Jogador 1, digite seu nome: ').capitalize()
-    nomeJogador2 = input('Jogador 2, digite seu nome: ').capitalize()
+    nomeJogador1 = input('\nJogador 1, digite seu nome: ').capitalize()
+    nomeJogador2 = input('\nJogador 2, digite seu nome: ').capitalize()
     resposta1 = 1
 
+#blabla
     while resposta1 == 1:
         jogada1 = input(f'\n{nomeJogador1}, faça sua jogada (pedra, papel ou tesoura): ').lower()
         os.system('clear')
-        jogada2 = input(f'\n{nomeJogador2}, faça sua jogada (pedra, papel ou tesoura): ').lower()
+        jogada2 = input(f'{nomeJogador2}, faça sua jogada (pedra, papel ou tesoura): ').lower()
         os.system('clear')
 
         if jogada1 == 'tesoura' and jogada2 == 'pedra' or jogada1 == 'papel' and jogada2 == 'tesoura' or jogada1 == 'pedra' and jogada2 == 'papel':
-            resposta1 = int(input(f'{nomeJogador2} venceu! Desejam jogar novamente? \n(Digite 1 para Sim e 2 para Não): '))
+            resposta1 = int(input(f'\n{nomeJogador2} venceu! Desejam jogar novamente? \n(Digite 1 para Sim e 2 para Não): '))
             jogadas2 += 1           
         elif jogada1 == 'pedra' and jogada2 == 'tesoura' or jogada1 == 'tesoura' and jogada2 == 'papel' or jogada1 == 'papel' and jogada2 == 'pedra':
-            resposta1 = int(input(f'{nomeJogador1} venceu! Desejam jogar novamente? \n(Digite 1 para Sim e 2 para Não): '))
+            resposta1 = int(input(f'\n{nomeJogador1} venceu! Desejam jogar novamente? \n(Digite 1 para Sim e 2 para Não): '))
             jogadas1 += 1
         elif jogada1 == 'pedra' and jogada2 == 'pedra' or jogada1 == 'tesoura' and jogada2 == 'tesoura' or jogada1 == 'papel' and jogada2 == 'papel': 
-            resposta1 = int(input(f'{nomeJogador1} e {nomeJogador2} empataram! Desejam jogar novamente?\n(Digite 1 para Sim e 2 para Não): '))  
+            resposta1 = int(input(f'\n{nomeJogador1} e {nomeJogador2} empataram! Desejam jogar novamente?\n(Digite 1 para Sim e 2 para Não): '))  
         else:
-            resposta1 = int(input(f'Ei, essa jogada não existe! Desejam jogar novamente?\n(Digite 1 para Sim e 2 para Não): ')) 
+            resposta1 = int(input(f'\nEi, essa jogada não existe! Desejam jogar novamente?\n(Digite 1 para Sim e 2 para Não): ')) 
 
     if jogadas1 > jogadas2:
         print(f'\nParabéns {nomeJogador1}, você foi o(a) vencedor(a)! \nPlacar final: {nomeJogador1} {jogadas1} x {jogadas2} {nomeJogador2}')
-        print('Muito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
     elif jogadas1 < jogadas2:
         print(f'\nParabéns {nomeJogador2}, você foi o(a) vencedor(a)! \nPlacar final: {nomeJogador2} {jogadas2} x {jogadas1} {nomeJogador1}')
-        print('Muito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
     else:
         print(f'\nHouve um empate! \nPlacar final: {nomeJogador1} {jogadas1} x {jogadas2} {nomeJogador2}')
             

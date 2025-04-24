@@ -152,7 +152,8 @@ elif opcoes == 3:
 #caso eles empatem isso tambem é infomado com o placar final
     else:
         print(f'\nHouve um empate! \nPlacar final: Computador 1 {jogadas1} x {jogadas2} Computador 2')
-
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        
 #-----------------------------------------------------------------------------------------------------------
 
 #e se o usuario escolher a opcao 4 que é sair, entao nos despedimos

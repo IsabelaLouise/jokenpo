@@ -7,8 +7,8 @@ jogadas1 = 0
 jogadas2 = 0
 
 #introdução para o jogo e pergunta qual numero o usuario quer
-print('\nBem vindo(a) ao jogo do pedra, papel e tesoura')
-print('\nVocê terá três opções de jogo: \n1. Jogador x Jogador \n2. Jogador x Computador \n3. Computador x Computador \n4.Sair')
+print('\nBem vindo(a) ao jogo do pedra, papel e tesoura!')
+print('\nVocê terá três opções de jogo: \n1. Jogador x Jogador \n2. Jogador x Computador \n3. Computador x Computador \n4. Sair')
 opcoes = int(input('\nQual você deseja jogar? '))
 os.system('clear')
 

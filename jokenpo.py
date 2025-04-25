@@ -59,7 +59,8 @@ if opcoes == 1:
 #agora oque sobrou é se empatar, então mostra mensagem de empate
     else:
         print(f'\nHouve um empate! \nPlacar final: {nomeJogador1} {jogadas1} x {jogadas2} {nomeJogador2}')
-
+        print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
+        
 #---------------------------------------------------------------------------------------------------------
 
 #agora se o usuario escolher jogador x computador, oedimos o nome do usuario

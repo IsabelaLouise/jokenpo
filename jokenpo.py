@@ -1,4 +1,4 @@
-#importar o sistema para limpar o terminal e randomizar a escolha do computador
+#importar o módulo para limpar o terminal e randomizar a escolha do computador
 import os 
 import random
 
@@ -60,7 +60,7 @@ if opcoes == 1:
     else:
         print(f'\nHouve um empate! \nPlacar final: {nomeJogador1} {jogadas1} x {jogadas2} {nomeJogador2}')
         print('\nMuito obrigada por jogar nosso jogo!\nFernanda Rodrigues, Isabela Louise e Julia Molina')
-        
+
 #---------------------------------------------------------------------------------------------------------
 
 #agora se o usuario escolher jogador x computador, oedimos o nome do usuario
